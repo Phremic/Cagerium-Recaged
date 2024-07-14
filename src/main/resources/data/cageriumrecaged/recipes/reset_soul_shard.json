@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cageriumrecaged:filled_soul_shard",
+      "data": 1
+    }
+  ],
+  "result": {
+    "item": "cageriumrecaged:empty_soul_shard",
+    "count": 1
+  }
+}

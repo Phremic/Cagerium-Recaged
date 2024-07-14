@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cageriumrecaged:block/cage"
+    },
+    "facing=east": {
+      "model": "cageriumrecaged:block/cage",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cageriumrecaged:block/cage",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cageriumrecaged:block/cage",
+      "y": 270
+    }
+  }
+}

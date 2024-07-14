@@ -1,0 +1,18 @@
+{
+  "creativetab.cageriumrecaged_tab": "Cagerium Recaged",
+
+  "item.cageriumrecaged.empty_soul_shard": "Empty Soul Shard",
+  "tooltip.cageriumrecaged.empty_soul_shard": "Used to capture the souls of slain mobs",
+
+  "item.cageriumrecaged.filled_soul_shard": "Filled Soul Shard",
+  "tooltip.cageriumrecaged.filled_soul_shard": "Can be placed in a farm to generate drops",
+
+  "block.cageriumrecaged.terrarium": "Terrarium",
+  "tooltip.cageriumrecaged.terrarium": "Generates drops from passive mobs",
+
+  "block.cageriumrecaged.cage": "Cage",
+  "tooltip.cageriumrecaged.cage": "Generates drops from hostile mobs",
+
+  "block.cageriumrecaged.plate": "Plate",
+  "tooltip.cageriumrecaged.plate": "Generates drops from boss mobs"
+}

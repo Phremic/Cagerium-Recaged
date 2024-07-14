@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " X ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:netherite_block"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "cageriumrecaged:plate"
+  }
+}

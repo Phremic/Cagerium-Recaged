@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cageriumrecaged:block/terrarium"
+    },
+    "facing=east": {
+      "model": "cageriumrecaged:block/terrarium",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cageriumrecaged:block/terrarium",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cageriumrecaged:block/terrarium",
+      "y": 270
+    }
+  }
+}
