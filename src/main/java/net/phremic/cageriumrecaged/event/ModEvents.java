@@ -8,6 +8,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.phremic.cageriumrecaged.CageriumRecaged;
+import net.phremic.cageriumrecaged.config.CageriumRecagedCommonConfigs;
 import net.phremic.cageriumrecaged.init.ItemInit;
 
 import java.util.Objects;
@@ -21,6 +22,16 @@ public class ModEvents {
         @SubscribeEvent
         public static void harvestSoul(LivingDeathEvent event) {
             if (event.getSource().getEntity() instanceof Player player) {
+
+                // Get the slain entity's ID
+                String entity_id = Objects.requireNonNull(event.getEntity().getEncodeId());
+
+                // Return if the config settings don't allow the entity to be captured
+                if (CageriumRecagedCommonConfigs.ONLY_ACCEPT_VANILLA.get()) {
+                    if (!entity_id.startsWith("minecraft:")) {
+                        return;
+                    }
+                }
 
                 // Get the player's inventory
                 Inventory inventory = player.getInventory();
@@ -37,7 +48,7 @@ public class ModEvents {
                     // Save the entity as a tag in the Filled Soul Shard
                     // Soul Shard -> MODID -> "EntityID" -> Entity ID
                     CompoundTag tag = new CompoundTag();
-                    tag.putString("EntityID", Objects.requireNonNull(event.getEntity().getEncodeId()));
+                    tag.putString("EntityID", entity_id);
                     filled_soul_shard.addTagElement(CageriumRecaged.MODID, tag);
 
                     // Get the stack of Empty Soul Shards from the player's inventory

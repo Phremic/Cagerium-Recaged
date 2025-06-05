@@ -182,8 +182,6 @@ public class FarmBlockEntity extends BlockEntity implements TickableBlockEntity 
 
     private void generateLoot() {
 
-        System.out.println("generateLoot");
-
         if (this.level == null) return;
         if (this.level.isClientSide()) return;
         if (getStack().isEmpty()) return;
